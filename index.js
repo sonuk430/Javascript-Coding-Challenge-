@@ -46,7 +46,6 @@ function isarr(input) {
 }
 // console.log(isarr([1,2]));
 
-
 //  Question 1: Sum of all natural numbers from 1 to n
 // Question 2: Sum of digits of a number
 // Question 3: Count the number of digits of a number
@@ -57,14 +56,27 @@ function isarr(input) {
 // Question 8: Power of Two
 // Question 9: Find Square root of a Number
 
+// function sumOfNaturalNumber(num){
+//   let sum = 0;
+//   for(let i = 0; i<=num;i++){
+//     sum = sum + 1;
+//   }
+//   return sum;
+// }
 
-function sumOfNaturalNumber(num){
-  let sum = 0;
-  for(let i = 0; i<=num;i++){
-    sum = sum + 1;
-  }
-  return sum;
+// Question 2: Sum of digits of a number
+function sumOfDigit(num) {
+  let val = 0;
+
+  let convertedStr = num.toString().split("");
+  // console.log(convertedStr);
+  convertedStr.forEach((element) => {
+    let val2 = parseInt(element);
+   val = val2 + val;
+  });
+  console.log(val);
+
+  // console.log(val);
 }
 
-
-
+sumOfDigit(12343);
