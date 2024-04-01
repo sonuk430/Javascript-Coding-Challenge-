@@ -72,11 +72,50 @@ function sumOfDigit(num) {
   // console.log(convertedStr);
   convertedStr.forEach((element) => {
     let val2 = parseInt(element);
-   val = val2 + val;
+    val = val2 + val;
   });
-  console.log(val);
+  // console.log(val);
 
   // console.log(val);
 }
 
 sumOfDigit(12343);
+
+// Generate Random pasword;
+
+function generatePassword() {
+  let spacleChar = "@#$%&*";
+  let alphbet = "abcdefABADEF";
+
+  let spacelChar = 3;
+  let alphabetChar = 4;
+
+  let password = [];
+
+  let spacleArr = spacleChar.split("");
+  let alphabetArr = alphbet.split("");
+
+  for (let i = 0; i < alphabetChar; i++) {
+    let randomIndex2 = Math.floor(Math.random() * alphabetArr.length);
+    password.push(alphabetArr[randomIndex2]);
+  }
+
+  let num = Math.floor(Math.random() * 1000 + 1);
+  // console.log(num);
+
+  let numArr = num.toString().split("");
+  numArr.forEach((el) => {
+    password.push(el);
+  });
+
+  for (let i = 0; i < spacelChar; i++) {
+    let randomIndex = Math.floor(Math.random() * spacleArr.length);
+    password.push(spacleArr[randomIndex]);
+  }
+
+
+
+  console.log(password);
+}
+
+generatePassword();
