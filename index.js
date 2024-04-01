@@ -117,7 +117,19 @@ function generatePassword() {
   // console.log(password);
   let result = password.join("");
 
-  console.log(result);
+  // console.log(result);
 }
 
 generatePassword();
+
+
+//  print the last index of the  array width using length;
+
+
+// let lastIndexOfTheArr = ['a','b','c'];
+
+// console.log(lastIndexOfTheArr.at(-1));
+
+
+
+
