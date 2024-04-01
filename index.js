@@ -81,14 +81,16 @@ function sumOfDigit(num) {
 
 sumOfDigit(12343);
 
+
+
 // Generate Random pasword;
 
 function generatePassword() {
   let spacleChar = "@#$%&*";
   let alphbet = "abcdefABADEF";
 
-  let spacelChar = 3;
-  let alphabetChar = 4;
+  let spacelChar = 2;
+  let alphabetChar = 2;
 
   let password = [];
 
@@ -112,10 +114,10 @@ function generatePassword() {
     let randomIndex = Math.floor(Math.random() * spacleArr.length);
     password.push(spacleArr[randomIndex]);
   }
+  // console.log(password);
+  let result = password.join("");
 
-
-
-  console.log(password);
+  console.log(result);
 }
 
 generatePassword();
