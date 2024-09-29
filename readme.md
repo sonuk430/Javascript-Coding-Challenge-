@@ -41,3 +41,26 @@ console.log(remove_chracter("sonu", 3)); // son
 </details>
 
 <!-- ********************* -->
+
+### Q3. Write a JavaScript program to create a new string from a given string with the first character of the given string added at the front and back.
+
+```javascript
+//example:
+console.log(front_back("Sonu_")); // output=> SSonu_S
+```
+
+<details>
+<summary>Click to view code</summary>
+
+```javascript
+function front_back(str) {
+  const first = str.substring(0, 1);
+  return first + str + first;
+}
+
+console.log(front_back("Sonu_")); // SSonu_S
+```
+
+</details>
+
+<!-- ********************* -->
