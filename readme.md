@@ -1,6 +1,10 @@
 # JS Challenge
 
-### Q1. Write a JavaScript program to find which 1st January is a Sunday between 2014 and 2050.
+This coding challenge is designed to help you practice JavaScript skills that are commonly tested in technical interviews.
+
+## Table of Challenges
+
+### Q1.Write a JavaScript program to find which 1st January is a Sunday between 2014 and 2050.
 
 <details>
 <summary>Click to view code</summary>
@@ -14,7 +18,11 @@ for (let year = 2012; year <= 2050; year++) {
 }
 ```
 
-### Q2. Write a JavaScript program to remove a character at the specified position of a given string and return the new string.
+</details>
+
+<!-- ********************* -->
+
+### Q2.Write a JavaScript program to remove a character at the specified position of a given string and return the new string.
 
 <details>
 <summary>Click to view code</summary>
@@ -26,6 +34,10 @@ function remove_chracter(str, char_pos) {
   return firstStep + secoundStep;
 }
 
-console.log(remove_chracter("sonu", 0));
-console.log(remove_chracter("sonu", 3));
+console.log(remove_chracter("sonu", 0)); //onu
+console.log(remove_chracter("sonu", 3)); // son
 ```
+
+</details>
+
+<!-- ********************* -->
